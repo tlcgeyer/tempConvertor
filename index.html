@@ -10,16 +10,24 @@
     <title>Temperature Convertor</title>
 </head>
 <body>
+    <div class="converter-container">
+        <h1 id="tmp">Temperature Converter</h1>
+        
+        <div class="input-container">
+            <label for="celsius">Celsius:</label>
+            <input type="number" id="celsius" placeholder="Enter Celsius" oninput="convertTemperature()">
+        </div>
 
-    <h2 id="h2">Temperature Convertor</h2> <br> 
-    <p id="covertemp">Converting temperatures</p>
+        <div class="input-container">
+            <label for="fahrenheit">Fahrenheit:</label>
+            <input type="number" id="fahrenheit" placeholder="Enter Fahrenheit" oninput="convertTemperature()">
+        </div>
 
-    <form>
-        <label for="temp">Temperature</label><br>
-         <input type="text" id="temp" name="temp"><br>
-        <label for="degrees"></label><br>
-          <input type="text" id="degrees" name="degrees">
-    </form>
-    <script src="script/code.js"></script>
+        <div class="result-container">
+            <p id="result">Result: </p>
+        </div>
+    </div>
+
+    <script src="./script/code.js"></script>
 </body>
 </html>
